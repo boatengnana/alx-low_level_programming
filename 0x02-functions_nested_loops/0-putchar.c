@@ -21,8 +21,9 @@ int main(void)
 {
 	int c;
 	char word[] = "_putchar";
+	int len = strlen(word);
 
-	for (c = 0; c < strlen(word); c++)
+	for (c = 0; c < len; c++)
 	{
 		_putchar(word[c]);
 	}
