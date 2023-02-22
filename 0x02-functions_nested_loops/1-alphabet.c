@@ -8,6 +8,8 @@
 
 void alphabet(void)
 {
+	char c;
+
 	for (c = 'z'; c <= 'z'; c++)
 	{
 		_putchar(c);
@@ -21,7 +23,7 @@ void alphabet(void)
  */
 int main(void)
 {
-	alphabet();
+	print_alphabet();
 	putchar('\n');
 	return(0);
 }
