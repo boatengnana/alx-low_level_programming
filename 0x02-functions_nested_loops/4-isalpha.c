@@ -9,7 +9,7 @@
 int _isalpha(char c)
 {
 	int result = isalpha(c);
-	
+
 	if (result == 0)
 	{
 		return (0);
