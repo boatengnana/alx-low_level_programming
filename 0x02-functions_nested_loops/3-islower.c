@@ -7,6 +7,14 @@
  */
 int _islower(char c)
 {
-	bool result = islower(c);
-	result == 0? return (0): return (1);
+	int result = islower(c);
+	if (result == 0)
+	{
+		return (0);
+	}
+	else
+	{
+		return (1);
+	}
+
 }
