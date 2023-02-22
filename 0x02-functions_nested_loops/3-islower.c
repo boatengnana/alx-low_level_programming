@@ -7,6 +7,6 @@
  */
 int _islower(char c)
 {
-	int result = islower(c);
-	result? return 1: return 0;
+	bool result = islower(c);
+	result == true? return (1): return (0);
 }
