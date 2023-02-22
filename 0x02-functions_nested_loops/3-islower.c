@@ -8,5 +8,5 @@
 int _islower(char c)
 {
 	bool result = islower(c);
-	result == true? return (1): return (0);
+	result == 0? return (0): return (1);
 }
