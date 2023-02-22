@@ -1,5 +1,13 @@
-#include <stdio.h>
-
+/**
+ * _putchar - writes the character c to standard output
+ * @c: the character to print
+ *
+ * Return: On success 1
+ */
+_putchar(char c)
+{
+	return (write(1, &c, 1));
+}
 /**
  * main - Entry point
  *
@@ -7,6 +15,12 @@
  */
 int main(void)
 {
-	printf("_putchar\n");
+	int c;
+	char word[] = "_putchar";
+
+	for (c = 0; c < strlen(word); c++)
+	{
+		_putchar(word[c]);
+	}
 	return (0);
 }
