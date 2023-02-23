@@ -10,13 +10,45 @@ int print_to_98(int n)
 {
 	int i;
 
-	for (i = n; i <= 98; i++)
+	if (n <= 98)
 	{
-		putchar('0' + i);
-		if (i != 98)
+	
+		for (i = n; i <= 98; i++)
 		{
-			putchar(',');
-			putchar(' ');
+			if (n > 9)
+			{
+				_putchar(i / 10 + '0');
+				_putchar(i % 10 + '0');
+			}
+			else
+			{
+				_putchar(i + '0');
+			}
+			if (i != 98)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
+		}
+	}
+	else
+	{
+		for (i = n; i >= 98; i--)
+		{
+			if (n > 9)
+			{
+				_putchar(i / 10 + '0');
+				_putchar(i % 10 + '0');
+			}
+			else
+			{
+				_putchar(i + '0');
+			}
+			if (i != 98)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
 		}
 	}
 	putchar('\n');
