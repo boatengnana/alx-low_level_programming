@@ -10,15 +10,15 @@ int print_to_98(int n)
 {
 	int i;
 
-	for (i = n; i <= 98; n > 98 ? i-- : i++)
+	for (i = n; i <= 98; n > 98 ? i++)
 	{
-		_putchar('0' + i);
+		putchar('0' + i);
 		if (i != 98)
 		{
-			_putchar(',');
-			_putchar(' ');
+			putchar(',');
+			putchar(' ');
 		}
 	}
-	_putchar('\n');
+	putchar('\n');
 	return (0);
 }
