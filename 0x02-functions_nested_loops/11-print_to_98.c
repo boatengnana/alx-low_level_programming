@@ -12,13 +12,13 @@ int print_to_98(int n)
 
 	for (i = n; i <= 98; n > 98 ? i-- : i++)
 	{
-		putchar('0' + i);
+		_putchar('0' + i);
 		if (i != 98)
 		{
-			putchar(',');
-			putchar(' ');
+			_putchar(',');
+			_putchar(' ');
 		}
 	}
-	putchar('\n');
+	_putchar('\n');
 	return (0);
 }
