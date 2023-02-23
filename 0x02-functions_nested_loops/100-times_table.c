@@ -26,6 +26,7 @@ void print_times_table(int n)
 			}
 			else if (mul < 9)
 			{
+				_putchar(' ');
 				_putchar(mul + '0');
 			}
 			else if (mul <= 99)
