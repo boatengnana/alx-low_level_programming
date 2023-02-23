@@ -24,7 +24,11 @@ void print_times_table(int n)
 			{
 				_putchar('0');
 			}
-			else if(mul <=9)
+			else if (mul < 9)
+			{
+				_putchar(mul + '0');
+			}
+			else if (mul <= 99)
 			{
 				_putchar((mul / 10) + '0');
 				_putchar((mul % 10) + '0');
@@ -41,5 +45,6 @@ void print_times_table(int n)
 				_putchar(' ');
 			}
 		}
+		_putchar('\n');
 	}
 }
