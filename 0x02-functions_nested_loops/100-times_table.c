@@ -20,7 +20,7 @@ void print_times_table(int n)
 		{
 			int mul = y * m;
 
-			if (mul == 0)
+			if (m == 0)
 			{
 				_putchar('0');
 			}
