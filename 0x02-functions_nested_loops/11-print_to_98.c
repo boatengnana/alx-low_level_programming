@@ -12,7 +12,7 @@ int print_to_98(int n)
 
 	for (i = n; i <= 98; n > 98 ? i-- : i++)
 	{
-		putchar(i + '0');
+		putchar('0' + i);
 		if (i != 98)
 		{
 			putchar(',');
