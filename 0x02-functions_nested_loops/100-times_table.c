@@ -10,44 +10,45 @@ void print_times_table(int n)
 {
 	int y, m;
 
-	if (n > 15 || n < 0)
+	if (n <= 15 || n >= 0)
 	{
-		return (1);
-	}
-	for (y = 0; y <= n; y++)
-	{
-		for (m = 0; m <= n; m++)
+	
+	
+		for (y = 0; y <= n; y++)
 		{
-			int mul = y * m;
+			for (m = 0; m <= n; m++)
+			{
+				int mul = y * m;
 
-			if (m == 0)
-			{
-				_putchar('0');
+				if (m == 0)
+				{
+					_putchar('0');
+				}
+				else if (mul < 9)
+				{
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(mul + '0');
+				}
+				else if (mul <= 99)
+				{
+					_putchar(' ');
+					_putchar((mul / 10) + '0');
+					_putchar((mul % 10) + '0');
+				}
+				else
+				{
+					_putchar((mul / 100) + '0');
+					_putchar(((mul / 10) % 10) + '0');
+					_putchar((mul % 10) + '0');
+				}
+				if (m < n)
+				{
+					_putchar(',');
+					_putchar(' ');
+				}
 			}
-			else if (mul < 9)
-			{
-				_putchar(' ');
-				_putchar(' ');
-				_putchar(mul + '0');
-			}
-			else if (mul <= 99)
-			{
-				_putchar(' ');
-				_putchar((mul / 10) + '0');
-				_putchar((mul % 10) + '0');
-			}
-			else
-			{
-				_putchar((mul / 100) + '0');
-				_putchar(((mul / 10) % 10) + '0');
-				_putchar((mul % 10) + '0');
-			}
-			if (m < n)
-			{
-				_putchar(',');
-				_putchar(' ');
-			}
+			_putchar('\n');
 		}
-		_putchar('\n');
 	}
 }
