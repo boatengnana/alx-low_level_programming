@@ -1,13 +1,12 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
- * main - Entry point
+ * fizz_buzz - fizz buzz problem
  *
- * Return: Always 0 (Success)
+ * Return: void
  */
 
-int main(void)
+void fizz_buzz(void)
 {
 	int i;
 
@@ -51,6 +50,4 @@ int main(void)
 		}
 	}
 	_putchar('\n');
-
-	return (0);
 }
