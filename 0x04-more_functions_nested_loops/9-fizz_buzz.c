@@ -14,35 +14,18 @@ int main(void)
 	{
 		if (i % 3 == 0 && i % 5 == 0)
 		{
-			_putchar('F');
-			_putchar('i');
-			_putchar('z');
-			_putchar('z');
-			_putchar('B');
-			_putchar('u');
-			_putchar('z');
-			_putchar('z');
-			_putchar(' ');
+			printf("FizzBuzz ");
 		}
 		else if (i % 5 == 0)
 		{
-			_putchar('B');
-			_putchar('u');
-			_putchar('z');
-			_putchar('z');
-			_putchar(' ');
+			printf("Buzz ");
 		}
 		else if (i % 3 == 0)
 		{
-			_putchar('F');
-			_putchar('i');
-			_putchar('z');
-			_putchar('z');
-			_putchar(' ');
+			printf("Fizz ");
 		else
 		{
-			_putchar(i + '0');
-			_putchar(' ');
+			printf("%d ", i);
 		}
 	}
 	_putchar('\n');
