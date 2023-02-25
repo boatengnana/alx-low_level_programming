@@ -16,31 +16,15 @@ int main(void)
 	{
 		if (i % 15 == 0)
 		{
-			putchar('F');
-			putchar('i');
-			putchar('z');
-			putchar('z');
-			putchar('B');
-			putchar('u');
-			putchar('z');
-			putchar('z');
-			putchar(' ');
+			system("echo FizzBuzz");
 		}
 		else if (i % 5 == 0)
 		{
-			putchar('B');
-			putchar('u');
-			putchar('z');
-			putchar('z');
-			putchar(' ');
+			system("echo Buzz");
 		}
 		else if (i % 3 == 0)
 		{
-			putchar('F');
-			putchar('i');
-			putchar('z');
-			putchar('z');
-			putchar(' ');
+			system("echo Fizz");
 		}
 		else
 		{
@@ -59,12 +43,11 @@ int main(void)
 			}
 			else
 			{
-				putchar(i +'0');
+				putchar(i + '0');
 				putchar(' ');
 			}
 		}
 	}
 	putchar('\n');
-
 	return (0);
 }
