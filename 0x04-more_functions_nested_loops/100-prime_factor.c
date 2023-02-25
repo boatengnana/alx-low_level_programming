@@ -12,7 +12,7 @@ int main(void)
 	long n = 612852475143;
 	long largest_factor = 2;
 
-	while (n % 2 == )
+	while (n % 2 == 0)
 	{
 		n /= 2;
 	}
