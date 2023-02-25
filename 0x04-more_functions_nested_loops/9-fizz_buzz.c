@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -15,19 +14,36 @@ int main(void)
 	{
 		if (i % 3 == 0 && i % 5 == 0)
 		{
-			printf("FizzBuzz ");
+			_putchar('F');
+			_putchar('i');
+			_putchar('z');
+			_putchar('z');
+			_putchar('B');
+			_putchar('u');
+			_putchar('z');
+			_putchar('z');
+			_putchar(' ');
 		}
 		else if (i % 5 == 0)
 		{
-			printf("Buzz ");
+			_putchar('B');
+			_putchar('u');
+			_putcahr('z');
+			_putchar('z');
+			_putchar(' ');
 		}
 		else if (i % 3 == 0)
 		{
-			printf("Fizz ");
+			_putchar('F');
+			_putchar('i');
+			_putchar('z');
+			_putchar('z');
+			_putchar(' ');
 		}
 		else
 		{
-			printf("%d ", i);
+			_putchar(i +'0');
+			_putchar(' ');
 		}
 	}
 	_putchar('\n');
