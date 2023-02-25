@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - fizz buzz problem
@@ -13,7 +13,7 @@ int main(void)
 
 	for (i = 1; i <= 100; i++)
 	{
-		if ((i % 3 == 0) && (i % 5 == 0))
+		if (i % 15 == 0)
 		{
 			_putchar('F');
 			_putchar('i');
