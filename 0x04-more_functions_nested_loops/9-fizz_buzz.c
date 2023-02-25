@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 #include <stdlib.h>
 
 /**
@@ -29,7 +30,7 @@ int main(void)
 		{
 			_putchar('B');
 			_putchar('u');
-			_putcahr('z');
+			_putchar('z');
 			_putchar('z');
 			_putchar(' ');
 		}
