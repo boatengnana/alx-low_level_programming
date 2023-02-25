@@ -44,8 +44,24 @@ int main(void)
 		}
 		else
 		{
-			putchar(i +'0');
-			putchar(' ');
+			if (i == 100)
+			{
+				putchar(i / 100 + '0');
+				putchar((i / 10) % 10 + '0');
+				putchar(i % 10 + '0');
+				putchar(' ');
+			}
+			else if (i > 9)
+			{
+				putchar(i / 10 + '0');
+				putchar(i % 10 + '0');
+				putchar(' ');
+			}
+			else
+			{
+				putchar(i +'0');
+				putchar(' ');
+			}
 		}
 	}
 	putchar('\n');
