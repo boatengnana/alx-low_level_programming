@@ -16,36 +16,24 @@ int main(void)
 	{
 		if (i % 15 == 0)
 		{
-			system("echo FizzBuzz");
+			system("echo -n 'FizzBuzz '");
 		}
 		else if (i % 5 == 0)
 		{
-			system("echo Buzz");
+			system("echo -n 'Buzz '");
 		}
 		else if (i % 3 == 0)
 		{
-			system("echo Fizz");
+			system("echo -n 'Fizz '");
 		}
 		else
 		{
-			if (i == 100)
-			{
-				putchar(i / 100 + '0');
-				putchar((i / 10) % 10 + '0');
-				putchar(i % 10 + '0');
-				putchar(' ');
-			}
-			else if (i > 9)
-			{
-				putchar(i / 10 + '0');
-				putchar(i % 10 + '0');
-				putchar(' ');
-			}
-			else
-			{
-				putchar(i + '0');
-				putchar(' ');
-			}
+			char num[4];
+
+			sprintf(num, "%d", i);
+			system("echo -n ");
+			system(num);
+			system("echo -n ' '");
 		}
 	}
 	putchar('\n');
