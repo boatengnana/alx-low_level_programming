@@ -1,6 +1,5 @@
 #include "main.h"
-#include <stdlib.h>
-#include <math.h>
+
 /**
  * main - prime factors
  *
@@ -12,26 +11,31 @@ int main(void)
 	long n = 612852475143;
 	long largest_factor = 2;
 
-	while (n % 2 == 0)
+	while (n > largest_factor)
 	{
-		n /= 2;
-	}
-
-	for (long i = 3; i < sqrt(n); i += 2)
-	{
-		while (n % i == 0)
+		if (n % largest_factor == 0)
 		{
-			largest_factor = i;
-			n /= i;
+			n /= largest_factor;
+			largest_factor = 2;
+		}
+		else
+		{
+			largest_factor++;
 		}
 	}
 
-	if (n > 2)
+	int divisor = 1;
+
+	while (n / divisor >= 10)
 	{
-		largest_factor = n;
+		divisor *= 10;
 	}
 
-	printf("%ld\n", largest_factor);
+	while (divisor > 0)
+	{
+		_putchar((n  / divisor) % 10 + '0');
+		divisor /= 10;
+	}
 
 	return (0);
 }
