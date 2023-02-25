@@ -20,7 +20,14 @@ int main(void)
 		}
 		else if (i % 5 == 0)
 		{
-			system("echo -n 'Buzz '");
+			if (i == 100)
+			{
+				system("echo -n 'Buzz'");
+			}
+			else
+			{
+				system("echo -n 'Buzz '");
+			}
 		}
 		else if (i % 3 == 0)
 		{
