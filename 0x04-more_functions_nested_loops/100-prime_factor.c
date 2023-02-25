@@ -33,9 +33,9 @@ int main(void)
 
 	while (divisor > 0)
 	{
-		_putchar((n  / divisor) % 10 + '0');
+		putchar((n  / divisor) % 10 + '0');
 		divisor /= 10;
 	}
-
+	putchar('\n');
 	return (0);
 }
