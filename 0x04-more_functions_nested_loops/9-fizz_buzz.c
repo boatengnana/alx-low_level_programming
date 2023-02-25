@@ -16,39 +16,39 @@ int main(void)
 	{
 		if (i % 15 == 0)
 		{
-			_putchar('F');
-			_putchar('i');
-			_putchar('z');
-			_putchar('z');
-			_putchar('B');
-			_putchar('u');
-			_putchar('z');
-			_putchar('z');
-			_putchar(' ');
+			putchar('F');
+			putchar('i');
+			putchar('z');
+			putchar('z');
+			putchar('B');
+			putchar('u');
+			putchar('z');
+			putchar('z');
+			putchar(' ');
 		}
 		else if (i % 5 == 0)
 		{
-			_putchar('B');
-			_putchar('u');
-			_putchar('z');
-			_putchar('z');
-			_putchar(' ');
+			putchar('B');
+			putchar('u');
+			putchar('z');
+			putchar('z');
+			putchar(' ');
 		}
 		else if (i % 3 == 0)
 		{
-			_putchar('F');
-			_putchar('i');
-			_putchar('z');
-			_putchar('z');
-			_putchar(' ');
+			putchar('F');
+			putchar('i');
+			putchar('z');
+			putchar('z');
+			putchar(' ');
 		}
 		else
 		{
-			_putchar(i +'0');
-			_putchar(' ');
+			putchar(i +'0');
+			putchar(' ');
 		}
 	}
-	_putchar('\n');
+	putchar('\n');
 
 	return (0);
 }
