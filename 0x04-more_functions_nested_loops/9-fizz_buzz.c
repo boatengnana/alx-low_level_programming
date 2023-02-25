@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * main - fizz buzz problem
@@ -23,6 +24,7 @@ int main(void)
 		else if (i % 3 == 0)
 		{
 			printf("Fizz ");
+		}
 		else
 		{
 			printf("%d ", i);
