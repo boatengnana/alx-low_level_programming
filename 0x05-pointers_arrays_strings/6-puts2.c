@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * puts2 - outputs an string 
+ * puts2 - outputs an string
  * @str: string
  *
  * Return: void
