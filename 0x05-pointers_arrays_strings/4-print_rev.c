@@ -15,13 +15,13 @@ void print_rev(char *s)
 	while(*str != '\0')
 	{
 		len++;
-		p++;
+		str++;
 	}
 
 	int i;
 
 	for (i = len - 1; i >= 0; i--)
 	{
-		printf("%s", *(s + i));
+		printf("%c", *(s + i));
 	}
 }
