@@ -12,7 +12,7 @@ void print_rev(char *s)
 	int len = 0, i;
 	char *str = s;
 
-	while(*str != '\0')
+	while (*str != '\0')
 	{
 		len++;
 		str++;
@@ -20,6 +20,6 @@ void print_rev(char *s)
 
 	for (i = len - 1; i >= 0; i--)
 	{
-		printf("%c", *(s + i));
+		printf("%c\n", *(s + i));
 	}
 }
