@@ -30,6 +30,17 @@ int _atoi(char *c)
 
 	while (c[i] >= '0' && c[i] <= '9')
 	{
+		if (num > (INT_MAX - (c[i] - '0') / 10))
+		{
+			if (sign == 1)
+			{
+				return INT_MAX;
+			}
+			else
+			{
+				return INT_MIN;
+			}
+		}
 		num = num * 10 + (c[i] - '0');
 		i++;
 	}
