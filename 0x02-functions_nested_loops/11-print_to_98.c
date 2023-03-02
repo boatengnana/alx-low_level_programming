@@ -8,10 +8,11 @@
  */
 int print_to_98(int n)
 {
-	int i;
+	int i, sign;
 
 	i = n > 98 ? n : 0;
-	for (; i <= 98; i++)
+	sign = n > 98 ? -1 : 1;
+	for (; i != 98; i = i + sign)
 	{
 		if (n > 99)
 		{
