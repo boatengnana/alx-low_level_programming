@@ -18,6 +18,11 @@ int main(void)
 			putchar(' ');
 			putchar(i + '0');
 			putchar((j + 1) + '0');
+			if ( i == 9 && j == 8 && j + 1 == 9)
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
 	}
 	putchar('\n');
