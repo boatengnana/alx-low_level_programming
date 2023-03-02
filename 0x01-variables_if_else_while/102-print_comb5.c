@@ -6,7 +6,7 @@
  * Return: Always 0 (Success)
  */
 
-int main()
+int main(void)
 {
 	int num1, num2;
 
@@ -21,7 +21,7 @@ int main()
 				putchar(' ');
 				putchar((num2 / 10) + '0');
 				putchar((num2 % 10) + '0');
-				if (num1 != 99 || num2 != 9)
+				if (num1 != 99 && num2 != 9)
 				{
 					putchar(',');
 					putchar(' ');
