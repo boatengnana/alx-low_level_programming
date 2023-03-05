@@ -4,11 +4,12 @@
  * _strncat - concats two strings
  * @dest: destination string
  * @src: source string
+ * @n: number of source charaters to append
  *
- * Return: string
+ * Return: pointer to a character
  */
 
-char *_strncat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
 	char *dest_start = dest;
 
