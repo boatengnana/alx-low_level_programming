@@ -10,13 +10,10 @@
 
 int _strcmp(char *s1, char *s2)
 {
-	int *string1 = s1;
-	int *string2 = s2;
-
-	while (*string1 == *string2)
+	while (*s1 && (*s1 == *s2))
 	{
-		string1++;
-		string2++;
+		s1++;
+		s2++;
 	}
 
 	return (*(unsigned char *)s1 - *(unsigned char *)s2);
