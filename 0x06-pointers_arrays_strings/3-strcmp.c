@@ -13,22 +13,11 @@ int _strcmp(char *s1, char *s2)
 	int *string1 = s1;
 	int *string2 = s2;
 
-	while (*string1 != *string2 && (*string1 != '\0' && *string2 != '\0'))
+	while (*string1 == *string2)
 	{
 		string1++;
 		string2++;
 	}
-
-	if (*string1 > *string2)
-	{
-		return (15);
-	}
-	else if (*string1 < *string2)
-	{
-		return (-15);
-	}
-	else
-	{
-		return (0);
-	}
-}			
+	
+	return (*(unsigned*)s1 - *(unsigned*)s2);
+}
