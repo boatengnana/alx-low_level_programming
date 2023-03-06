@@ -1,6 +1,6 @@
 #include "main.h"
 
-/** 
+/**
  * leet - leet
  * @c: pointer to a string
  *
@@ -20,9 +20,9 @@ char *leet(char *c)
 			if (c[i] == letter[j])
 			{
 				c[i] = leet_table[j / 2];
-				j++;
 				break;
 			}
+			j++;
 		}
 		i++;
 	}
