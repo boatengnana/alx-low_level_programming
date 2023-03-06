@@ -1,5 +1,4 @@
 #include "main.h"
-#include <string.h>
 /**
  * leet - leet
  * @c: pointer to a string
@@ -17,7 +16,7 @@ char *leet(char *c)
 	{
 		int j = 0;
 
-		while (j < strlen(letter))
+		while (j < 10)
 		{
 			if (*(c + i) == letter[j])
 			{
