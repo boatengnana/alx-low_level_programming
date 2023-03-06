@@ -10,13 +10,17 @@
 
 void reverse_array(int *a, int n)
 {
-	int dup[] = *a;
-	int *p = dup;
-	int i = n - 1;
+	int dup[n];
+	int k, j = 0;
+
+	for (k = 0; k < n; k++)
+	{
+		*(dup + i) = *(a + i);
+	}
 
 	for (; i >= 0; i--)
 	{
-		*a = *(p + i);
-		a++;
+		*(a + j) = *(p + i);
+		j++;
 	}
 }
