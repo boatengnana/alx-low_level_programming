@@ -10,12 +10,22 @@
 char *cap_string(char *s)
 {
 	int i = 0;
+	int cap_next = 1;
 
-	while (*(s + i) != '\0' && (*(s + i) == ',' || *(s + i) == '.' || *(s + i) == ';' || *(s + i) == '"' || *(s + i) == '?' || *(s + i) == '!' || *(s + i) == '(' || *(s + i) == ')' || *(s + i) == '{' || *(s + i) == '}'))
+	while (*(s + i) != '\0')
 	{
-		*(s + i + 1) -= 32;
-	}
-	i++;
+		if (isspace(*(s + i)) || isPunc(*(s + i)))
+		{
+			cap_next = 1;
+		}
 
+		else if (cap_next)
+		{
+			*(s + i) -= 32;
+			cap_next = 0;
+		}
+
+		i++;
+	}
 	return (s);
 }
