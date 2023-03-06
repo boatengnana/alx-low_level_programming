@@ -20,7 +20,7 @@ char *cap_string(char *s)
 			cap_next = 1;
 		}
 
-		else if (cap_next)
+		else if (cap_next == 1)
 		{
 			*(s + i) = toupper(*(s + i));
 			cap_next = 0;
