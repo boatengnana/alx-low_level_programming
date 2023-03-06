@@ -18,7 +18,7 @@ char *leet(char *c)
 
 		while (j < 10)
 		{
-			if (*(c + i) == *(letter + j))
+			if (*(letter + j) == *(c + i))
 			{
 				*(c + i) = leet_table[j / 2];
 				break;
