@@ -22,7 +22,10 @@ char *cap_string(char *s)
 
 		else if (cap_next)
 		{
-			*(s + i) -= 32;
+			if (*(s + i) >= 'a' && *(s + i) <= 'z')
+			{
+				*(s + i) -= 32;
+			}
 			cap_next = 0;
 		}
 
