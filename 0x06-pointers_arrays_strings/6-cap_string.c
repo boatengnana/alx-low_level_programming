@@ -15,7 +15,7 @@ char *cap_string(char *s)
 
 	while (*(s + i) != '\0')
 	{
-		if (isspace(*(s + i)) || isPunc(*(s + i)))
+		if (isspace(*(s + i)) || ispunct(*(s + i)))
 		{
 			cap_next = 1;
 		}
