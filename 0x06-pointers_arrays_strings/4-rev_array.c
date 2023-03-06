@@ -10,17 +10,12 @@
 
 void reverse_array(int *a, int n)
 {
-	int dup[n];
-	int k, j = 0;
+	int j,i, temp;
 
-	for (k = 0; k < n; k++)
+	for (i = 0, j = n -1; i < j; i++, j--)
 	{
-		*(dup + i) = *(a + i);
-	}
-
-	for (; i >= 0; i--)
-	{
-		*(a + j) = *(p + i);
-		j++;
+		temp = *(a + j);
+		*(a + j) = *(a + i);
+		*(a + i) = temp;
 	}
 }
