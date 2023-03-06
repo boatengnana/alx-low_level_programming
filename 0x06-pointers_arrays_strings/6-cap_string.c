@@ -22,10 +22,7 @@ char *cap_string(char *s)
 
 		else if (cap_next)
 		{
-			if (*(s + i) >= 'a' && *(s + i) <= 'z')
-			{
-				*(s + i) -= 32;
-			}
+			*(s + i) = toupper(*(s + i));
 			cap_next = 0;
 		}
 
