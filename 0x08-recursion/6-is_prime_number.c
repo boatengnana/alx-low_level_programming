@@ -15,7 +15,7 @@ int is_prime_recursive(int n, int i)
 		return (0);
 	}
 
-	if (i > _sqrt_recursion(n))
+	if (i * i > n)
 	{
 		return (1);
 	}
