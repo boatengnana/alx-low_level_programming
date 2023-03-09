@@ -9,26 +9,15 @@
 
 void _print_rev_recursion(char *s)
 {
-	char *p = s;
-	char temp;
 
 	while (*s != '\0')
 	{
 		s++;
 	}
-
-	char *pend = s;
-
-	while (*pend != *p)
-	{
-		temp = *pend;
-		*pend = *p;
-		*p = temp;
-
-		pend--;
-		p++;
-
-		_print_rev_recursion(s);
-	}
-
+	
+	_putchar(*s);
+	s--;
+	*s = '\0';
+	s--;
+	_print_rev_recursion(s);
 }
