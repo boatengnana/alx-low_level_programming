@@ -10,14 +10,12 @@
 void _print_rev_recursion(char *s)
 {
 
-	while (*s != '\0')
+	if (*s == '\0')
 	{
-		s++;
+		return;
 	}
-	
+
+	_print_rev_recursion(s + 1);
+
 	_putchar(*s);
-	s--;
-	*s = '\0';
-	s--;
-	_print_rev_recursion(s);
 }
