@@ -23,9 +23,9 @@ int main(int argc, char *argv[])
 	for (i = 1; i < argc; i++)
 	{
 		int is_valid = 1;
-		char *p;
+		char *p = argv[i];
 
-		for (*p == argv[i]; *p != '\0'; p++)
+		for (; *p != '\0'; p++)
 		{
 			if (!isdigit(*p))
 			{
