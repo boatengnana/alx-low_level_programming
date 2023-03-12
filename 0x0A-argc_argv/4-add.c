@@ -1,59 +1,46 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
-#include "main.h"
 
 /**
- * main - Entry point
- * @argv: asfj
- * @argc: asdf
- *
+ * main - entry point
+ * Description: adds 2 positive numbers
+ * @argc: arguement count
+ * @argv: argument array
  * Return: 0
  */
 
 int main(int argc, char *argv[])
 {
-	int i, sum = 0;
+	int sum;
+	int num;
+	int arg_index;
+	int char_index;
 
+	sum = 0;
 	if (argc == 1)
 	{
-		printf("%d\n", 0);
+		printf("0\n");
 		return (0);
 	}
-
-	for (i = 1; i < argc; i++)
+	for (arg_index = 1; arg_index < argc; arg_index++)
 	{
-		int is_valid = 1;
-		char *p = argv[i];
-
-		for (; *p != '\0'; p++)
+		for (char_index = 0; argv[arg_index][char_index] != '\0'; char_index++)
 		{
-			if (!isdigit(*p))
+			if (!isdigit(argv[arg_index][char_index]))
 			{
-				is_valid = 0;
-				break;
+				printf("Error\n");
+				return (1);
 			}
 		}
-
-		if (!is_valid)
+		num = atoi(argv[arg_index]);
+		if (num < 0)
 		{
 			printf("Error\n");
 			return (1);
 		}
-
-		int num = atoi(argv[i]);
-
-		if (num > 0)
-		{
-			sum += num;
-		}
-		else
-		{
-			return (1);
-		}
+		sum += num;
 	}
-
 	printf("%d\n", sum);
-
 	return (0);
 }
