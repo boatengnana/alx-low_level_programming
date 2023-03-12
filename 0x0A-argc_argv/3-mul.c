@@ -3,8 +3,8 @@
 
 /**
  * main - prints the multiple of the two arguments that it receives
- * @argc - number of arguments
- * @argv - the arguments themselves
+ * @argc: number of arguments
+ * @argv: the arguments themselves
  *
  * Return: Always 0 (Success)
  */
