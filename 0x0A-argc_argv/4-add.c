@@ -20,23 +20,26 @@ int main(int argc, char *argv[])
 		return (0);
 	}
 
-	for (k = 0; k < argc; k++)
-	{
-		int j = 0;
-
-		while(argv[j])
-		{
-			if (!isdigit(argv[j]))
-			{
-				printf("Error\n");
-				return (1);
-			}
-		}
-	}
-
-
 	for (i = 1; i < argc; i++)
 	{
+		int is_valid = 1;
+		char *p;
+
+		for (*p == argv[i]; *p != '\0'; p++)
+		{
+			if (!isdigit(*p))
+			{
+				is_valid = 0;
+				break;
+			}
+		}
+
+		if (!is_valid)
+		{
+			printf("Error\n");
+			return (1);
+		}
+
 		int num = atoi(argv[i]);
 
 		if (num > 0)
