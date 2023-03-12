@@ -13,7 +13,7 @@
 
 int main(int argc, char *argv[])
 {
-	int i, k, sum = 0;
+	int i, sum = 0;
 
 	if (argc == 1)
 	{
@@ -46,6 +46,10 @@ int main(int argc, char *argv[])
 		if (num > 0)
 		{
 			sum += num;
+		}
+		else
+		{
+			return (1);
 		}
 	}
 
