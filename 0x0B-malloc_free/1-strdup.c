@@ -11,8 +11,15 @@ char *_strdup(char *str)
 {
 	char *mem;
 	char *temp = str;
+	int len;
 
-	mem = malloc(sizeof(str));
+	while (*str != '\0')
+	{
+		len++;
+		str++;
+	}
+
+	mem = malloc(sizeof(char) * len);
 
 	if (str == NULL)
 	{
