@@ -9,7 +9,7 @@
  * Return: pointer to the string
  */
 
-char *str_concat(char *s1, char s2)
+char *str_concat(char *s1, char *s2)
 {
 	int s1_len = strlen(s1);
 	int s2_len = strlen(s2);
