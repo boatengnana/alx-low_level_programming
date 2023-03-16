@@ -11,19 +11,40 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	int s1_len = strlen(s1);
-	int s2_len = strlen(s2);
-	char *mem;
-	
-	mem = malloc(sizeof(char) * (s1_len + s2_len + 1));
+	s1 = s1 == NULL ? "" : s1;
+	s2 = s2 == NULL ? "" : s2;
 
+	char *mem;
+	int len1 = 0, len2 = 0;
+
+	while (s1[len1] != '\0')
+	{
+		len1++;
+	}
+
+	while (s2[len2] != '\0')
+	{
+		len2++;
+	}
+
+	mem = malloc(len1 + len2 + 1);
 	if (mem == NULL)
 	{
 		return (NULL);
 	}
 
-	strcat(s1, s2);
-	strcpy(mem, s1);
+	while (i < len1)
+	{
+		mem[i] = s1[i];
+		i++;
+	}
+
+	while (k < len2)
+	{
+		mem[len1 + k] = s2[k];
+		k++;
+	}
+	mem[len1 + len2] = '\0';
 
 	return (mem);
 }
