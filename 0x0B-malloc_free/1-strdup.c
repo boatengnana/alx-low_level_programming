@@ -37,7 +37,6 @@ char *_strdup(char *str)
 		mem++;
 	}
 	*mem = '\0';
-	free(mem);
 
 	return (mem);
 }
