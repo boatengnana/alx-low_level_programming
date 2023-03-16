@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 /**
  * _strdup - returns a pointer to a new duplicate string
@@ -21,7 +22,7 @@ char *_strdup(char *str)
 	{
 		len++;
 	}
-	
+
 	if (len == 0)
 	{
 		mem = malloc(1);
@@ -36,13 +37,7 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	while (*str != '\0')
-	{
-		*mem = *str;
-		str++;
-		mem++;
-	}
-	*mem = '\0';
+	strcpy(mem, str);
 
 	return (mem);
 }
