@@ -11,7 +11,7 @@ char *_strdup(char *str)
 {
 	char *mem;
 	char *temp = str;
-	int len;
+	int len = 0;
 
 	while (*str != '\0')
 	{
@@ -37,6 +37,7 @@ char *_strdup(char *str)
 		mem++;
 		temp++;
 	}
+	*temp = '\0';
 	free(mem);
 
 	return (mem);
