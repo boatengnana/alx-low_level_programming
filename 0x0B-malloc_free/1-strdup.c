@@ -21,9 +21,15 @@ char *_strdup(char *str)
 	{
 		len++;
 	}
-
-	mem = malloc(sizeof(char) * (len + 1));
-
+	
+	if (len == 0)
+	{
+		mem = malloc(1);
+	}
+	else
+	{
+		mem = malloc(sizeof(char) * (len + 1));
+	}
 
 	if (mem == NULL)
 	{
