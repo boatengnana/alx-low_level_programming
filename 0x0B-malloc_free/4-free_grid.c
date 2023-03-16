@@ -5,7 +5,7 @@
  * @grid: 2D array
  * @height: rows
  *
- * Return: pointer to int pointer
+ * Return: Nothing
  */
 
 void free_grid(int **grid, int height)
