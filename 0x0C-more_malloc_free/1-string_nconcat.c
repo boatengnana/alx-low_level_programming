@@ -37,7 +37,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (; i < len1; i++)
 		mem[i] = s1[i];
 
-	for (; k < n; k++)
+	for (; k < limit; k++)
 		mem[len1 + k] = s2[k];
 
 	mem[len1 + limit] = '\0';
