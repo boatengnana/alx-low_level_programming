@@ -12,8 +12,7 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *mem;
-	unsigned int len2 = 0, len1 = 0, i = 0, k = 0;
-	int limit;
+	unsigned int len2 = 0, len1 = 0, i = 0, k = 0, limit;
 
 	if (s1 == NULL)
 		s1 = "";
@@ -26,8 +25,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	while (s2[len2] != '\0')
 		len2++;
 
-	limit = n >= len2 ? len2 : n;
-
+	if (n >= len2)
+		limit = len2;
+	else
+		limit = n;
 	mem = malloc(len1 + limit + 1);
 
 	if (mem == NULL)
