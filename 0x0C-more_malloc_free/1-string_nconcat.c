@@ -34,7 +34,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	int limit = n >= len2 ? len2 : n;
 
-	mem = malloc(sizeof(char) * (len1 + limit + 1));
+	mem = malloc(len1 + limit + 1);
 
 	if (mem == NULL)
 	{
