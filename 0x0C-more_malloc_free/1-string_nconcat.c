@@ -22,7 +22,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 
 	char *mem;
-	int len2 = 0;
+	unsigned int len2 = 0;
 	int len1 = 0;
 	int i = 0, k = 0;
 
