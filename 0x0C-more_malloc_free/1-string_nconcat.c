@@ -18,7 +18,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (s2 == NULL)
 	{
-		s2 = ""'
+		s2 = "";
 	}
 
 	char *mem;
@@ -45,7 +45,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		mem[len1 + k] = s2[k];
 	}
 
-	mem[len1 + len2] = '\0';
+	mem[len1 + limit] = '\0';
 
 	return (mem);
 }
