@@ -10,7 +10,7 @@
 
 int *array_range(int min, int max)
 {
-	void *mem;
+	int *mem;
 	int i = 0;
 
 	if (min > max)
@@ -27,5 +27,5 @@ int *array_range(int min, int max)
 		i++;
 	}
 
-	return (mem);
+	return ((void *)mem);
 }
