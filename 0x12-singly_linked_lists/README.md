@@ -1,2 +1,0 @@
-LOW LEVEL PROGRAMMING WITH C
-Singly linked lists
